@@ -1,115 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Faraz Gill | Python Developer</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f4f6f8;
-      color: #333;
-      margin: 0;
-      padding: 0;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Faraz Gill | Python Developer</title>
+<style>
+  /* Rocky background */
+  body {
+    font-family: Arial, sans-serif;
+    background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
 
-    .container {
-      max-width: 1000px;
-      margin: 2em auto;
-      display: flex;
-      align-items: flex-start;
-      gap: 2em;
-      padding: 0 20px;
-    }
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2em 1em;
+    background: rgba(0, 0, 0, 0.6);
+  }
 
-    .photo {
-      flex: 0 0 200px;
-    }
+  header img {
+    border-radius: 50%;
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border: 4px solid #fff;
+    margin-right: 20px;
+  }
 
-    .photo img {
-      width: 180px;
-      height: 180px;
-      object-fit: cover;
-      border-radius: 50%;
-      border: 4px solid #0078d7;
-    }
+  header div {
+    max-width: 600px;
+  }
 
-    .content {
-      flex: 1;
-    }
+  h1, h2 {
+    margin: 0.2em 0;
+  }
 
-    h1 {
-      margin: 0;
-      color: #0078d7;
-    }
+  section {
+    max-width: 900px;
+    margin: 3em auto;
+    padding: 1em 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease;
+  }
 
-    h2 {
-      color: #0078d7;
-    }
+  section.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
 
-    p {
-      line-height: 1.6;
-    }
+  .links a {
+    display: inline-block;
+    margin: 10px 10px 0 0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #fff;
+    background: #0078d7;
+    text-decoration: none;
+    transition: background 0.3s;
+  }
 
-    .links, .downloads {
-      margin: 1em 0;
-    }
+  .links a:hover {
+    background: #005ea1;
+  }
 
-    .links a, .downloads a {
-      display: inline-block;
-      margin: 5px 10px 5px 0;
-      padding: 8px 16px;
-      border-radius: 5px;
-      color: white;
-      background: #0078d7;
-      text-decoration: none;
-      transition: background 0.3s;
-    }
+  footer {
+    text-align: center;
+    padding: 2em 1em;
+    background: rgba(0, 0, 0, 0.6);
+    margin-top: 2em;
+  }
 
-    .links a:hover, .downloads a:hover {
-      background: #005ea1;
-    }
-
-    footer {
-      text-align: center;
-      padding: 1em;
-      background: #e1e1e1;
-      margin-top: 2em;
-    }
-  </style>
+  /* Cover letter styling */
+  .cover-letter {
+    white-space: pre-line;
+  }
+</style>
 </head>
 <body>
-  <div class="container">
-    <div class="photo">
-      <img src="myphoto.jpg" alt="Faraz Gill Photo" />
-    </div>
-    <div class="content">
-      <h1>Faraz Gill</h1>
-      <p>Python Developer | Freelancer | Data Enthusiast</p>
 
-      <h2>About Me</h2>
-      <p>
-        Hi! I'm Faraz, a passionate Python developer who enjoys solving real-world problems
-        through automation, data processing, and web scraping. I continuously learn
-        and build projects that improve efficiency and creativity.
-      </p>
-
-      <div class="links">
-        <a href="https://www.linkedin.com/in/faraz-gill-2549261b2" target="_blank">LinkedIn</a>
-        <a href="https://www.fiverr.com/s/jjKERP7" target="_blank">Fiverr</a>
-        <a href="https://github.com/FARAZGILL15" target="_blank">GitHub</a>
-        <a href="mailto:farazgill15@gmail.com">Email Me</a>
-      </div>
-
-      <div class="downloads">
-        <a href="FarazGill_CV.pdf" target="_blank">Download CV</a>
-        <a href="FarazGill_Europass_coverLetter.pdf" target="_blank">Download Cover Letter</a>
-      </div>
-    </div>
+<header>
+  <img src="myphoto.jpg" alt="Faraz Gill Photo">
+  <div>
+    <h1>Faraz Gill</h1>
+    <p>Python Developer | Freelancer | Data Enthusiast</p>
   </div>
+</header>
 
-  <footer>
-    <p>© 2025 Faraz Gill | Built with ❤️ using HTML & GitHub Pages</p>
-  </footer>
+<section class="reveal">
+  <h2>About Me</h2>
+  <p>
+    Hi! I'm Faraz, a passionate Python developer who enjoys solving real-world problems
+    through automation, data processing, and web scraping. I’m continuously learning
+    and building projects that improve efficiency and creativity.
+  </p>
+  <div class="links">
+    <a href="https://www.linkedin.com/in/faraz-gill-2549261b2" target="_blank">LinkedIn</a>
+    <a href="https://www.fiverr.com/s/jjKERP7" target="_blank">Fiverr</a>
+    <a href="https://github.com/FARAZGILL15" target="_blank">GitHub</a>
+    <a href="FarazGill_CV.pdf" download>Download CV</a>
+    <a href="FarazGill_Europass_coverLetter.pdf" download>Download Cover Letter</a>
+  </div>
+</section>
+
+<section class="reveal">
+  <h2>Cover Letter</h2>
+  <div class="cover-letter">
+    <!-- You can copy/paste the text content of your Europass cover letter here -->
+    Dear Hiring Manager,
+    
+    I am writing to express my interest in the Junior Python Developer
+    position at your organisation. With a strong foundation in Python
+    programming and a particular focus on debugging, automation,
+    and web scraping, I am eager to contribute to your team’s
+    development and efficiency.
+
+    Through hands-on experience and continuous learning, I have
+    gained a solid understanding of Python’s core principles, including
+    script optimisation, error handling, and data extraction from
+    websites. My recent projects involved developing automated
+    workflows to reduce repetitive tasks and implementing web
+    scraping tools to collect structured data efficiently. These
+    experiences have strengthened both my technical problem-solving
+    skills and my ability to work independently on complex coding
+    challenges.
+
+    What attracts me most to this opportunity in the Netherlands is
+    the chance to apply my growing expertise in a collaborative
+    environment that values innovation and continuous improvement.
+    I am confident that my motivation to learn and deliver quality
+    results aligns well with the expectations of a dynamic software
+    development team.
+
+    I would appreciate the opportunity to discuss how my skills and
+    enthusiasm can contribute to your projects. Thank you for
+    considering my application. I look forward to the possibility of an
+    interview.
+    
+    Kind regards 
+    Faraz Gill
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 Faraz Gill | Built with ❤️ using HTML & GitHub Pages</p>
+</footer>
+
+<script>
+  // Scroll reveal
+  const sections = document.querySelectorAll('.reveal');
+  const revealOnScroll = () => {
+    const windowHeight = window.innerHeight;
+    sections.forEach(section => {
+      const sectionTop = section.getBoundingClientRect().top;
+      if(sectionTop < windowHeight - 100) {
+        section.classList.add('show');
+      }
+    });
+  }
+  window.addEventListener('scroll', revealOnScroll);
+  window.addEventListener('load', revealOnScroll);
+</script>
+
 </body>
 </html>
