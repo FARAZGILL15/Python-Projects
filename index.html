@@ -5,175 +5,111 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Faraz Gill | Python Developer</title>
   <style>
-    * {
-      box-sizing: border-box;
-    }
     body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f8;
+      color: #333;
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-      color: #f9fafc;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
+      padding: 0;
     }
+
     .container {
+      max-width: 1000px;
+      margin: 2em auto;
       display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-      padding: 60px 20px;
+      align-items: flex-start;
+      gap: 2em;
+      padding: 0 20px;
+    }
+
+    .photo {
+      flex: 0 0 200px;
+    }
+
+    .photo img {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #0078d7;
+    }
+
+    .content {
       flex: 1;
     }
-    .photo {
-      flex: 1 1 300px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 20px;
-    }
-    .photo img {
-      width: 250px;
-      height: 250px;
-      border-radius: 50%;
-      border: 4px solid #00aaff;
-      object-fit: cover;
-      box-shadow: 0 0 25px rgba(0, 170, 255, 0.6);
-    }
-    .content {
-      flex: 1 1 400px;
-      max-width: 600px;
-      padding: 20px;
-    }
+
     h1 {
-      font-size: 2.5em;
-      margin-bottom: 10px;
+      margin: 0;
+      color: #0078d7;
     }
-    p.subtitle {
-      font-size: 1.2em;
-      color: #b3c7d6;
-      margin-bottom: 25px;
+
+    h2 {
+      color: #0078d7;
     }
-    .about {
-      background: rgba(255, 255, 255, 0.08);
-      padding: 25px;
-      border-radius: 12px;
-      backdrop-filter: blur(6px);
-      box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
-    }
-    .about h2 {
-      color: #00aaff;
-      margin-bottom: 10px;
-    }
-    .about p {
-      color: #dbe9f4;
-      font-size: 1.05em;
+
+    p {
       line-height: 1.6;
     }
-    .links {
-      margin-top: 25px;
+
+    .links, .downloads {
+      margin: 1em 0;
     }
-    .links a {
+
+    .links a, .downloads a {
       display: inline-block;
-      background: #00aaff;
+      margin: 5px 10px 5px 0;
+      padding: 8px 16px;
+      border-radius: 5px;
       color: white;
+      background: #0078d7;
       text-decoration: none;
-      margin: 8px;
-      padding: 12px 24px;
-      border-radius: 6px;
-      transition: all 0.3s ease;
-      font-weight: 600;
+      transition: background 0.3s;
     }
-    .links a:hover {
-      background: #0088cc;
-      transform: translateY(-3px);
-      box-shadow: 0 0 15px rgba(0, 170, 255, 0.6);
+
+    .links a:hover, .downloads a:hover {
+      background: #005ea1;
     }
-    .email {
-      margin-top: 15px;
-      color: #b3c7d6;
-      font-size: 1em;
-    }
+
     footer {
       text-align: center;
-      padding: 15px;
-      background: rgba(0, 0, 0, 0.2);
-      font-size: 0.9em;
-      color: #b3c7d6;
-    }
-    @media (max-width: 768px) {
-      .container {
-        flex-direction: column;
-      }
-      .photo img {
-        width: 180px;
-        height: 180px;
-        margin-bottom: 20px;
-      }
+      padding: 1em;
+      background: #e1e1e1;
+      margin-top: 2em;
     }
   </style>
 </head>
 <body>
   <div class="container">
     <div class="photo">
-      <img src="your-photo.jpg" alt="Faraz Gill">
+      <img src="myphoto.jpg" alt="Faraz Gill Photo" />
     </div>
-
     <div class="content">
       <h1>Faraz Gill</h1>
-      <p class="subtitle">Python Developer | Automation & Data Processing | Freelancer</p>
+      <p>Python Developer | Freelancer | Data Enthusiast</p>
 
-      <div class="about">
-        <h2>About Me</h2>
-        <p>
-          I'm a Python developer passionate about automation, data processing, and web scraping.
-          I love building efficient solutions that save time and enhance productivity. I’m currently
-          developing automation scripts and web scraping tools for clients worldwide.
-        </p>
-        <section>
-          <h2>Cover Letter</h2>
-            <p>You can view or download my Europass cover letter below:</p>
-            <a class="download-btn" href="FarazGill_Europass_CoverLetter.pdf" target="_blank">
-                View / Download Cover Letter
-            </a>
-        </section>
+      <h2>About Me</h2>
+      <p>
+        Hi! I'm Faraz, a passionate Python developer who enjoys solving real-world problems
+        through automation, data processing, and web scraping. I continuously learn
+        and build projects that improve efficiency and creativity.
+      </p>
 
-        <style>
-            .download-btn {
-            display: inline-block;
-            margin: 10px 0;
-            padding: 10px 20px;
-            color: white;
-            background: #28a745;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background 0.3s;
-            }
-            .download-btn:hover {
-            background: #1e7e34;
-            }
-        </style>
+      <div class="links">
+        <a href="https://www.linkedin.com/in/faraz-gill-2549261b2" target="_blank">LinkedIn</a>
+        <a href="https://www.fiverr.com/s/jjKERP7" target="_blank">Fiverr</a>
+        <a href="https://github.com/FARAZGILL15" target="_blank">GitHub</a>
+        <a href="mailto:farazgill15@gmail.com">Email Me</a>
+      </div>
 
-        <div class="links">
-          <a href="https://www.linkedin.com/in/faraz-gill-2549261b2" target="_blank">LinkedIn</a>
-          <a href="https://www.fiverr.com/s/jjKERP7" target="_blank">Fiverr</a>
-          <a href="https://github.com/FARAZGILL15" target="_blank">GitHub</a>
-          <a href="FarazGill_CV.pdf" target="_blank">Download CV</a>
-
-        </div>
-
-        <div class="email">
-          📧 <strong>Email:</strong> 
-          <a href="mailto:farazgill15@gmail.com" style="color:#00aaff; text-decoration:none;">
-            farazgill15@gmail.com
-          </a>
-        </div>
+      <div class="downloads">
+        <a href="FarazGill_CV.pdf" target="_blank">Download CV</a>
+        <a href="FarazGill_Europass_coverLetter.pdf" target="_blank">Download Cover Letter</a>
       </div>
     </div>
   </div>
 
   <footer>
-    © 2025 Faraz Gill — Built with 💻 Python & ❤️ Passion
+    <p>© 2025 Faraz Gill | Built with ❤️ using HTML & GitHub Pages</p>
   </footer>
 </body>
 </html>
